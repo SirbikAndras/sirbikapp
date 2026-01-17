@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class SpaController {
 
     @GetMapping(value = {
-            "/{path:^(?!assets|static|public|index\\.html).*$}/**",
-            "/{path:^(?!assets|static|public|index\\.html).*$}"
+            "/{path:^(?!assets|static|public|swagger-ui|index\\.html).*$}/**",
+            "/{path:^(?!assets|static|public|swagger-ui|index\\.html).*$}"
     })
     public String forward() {
         return "forward:/index.html";
