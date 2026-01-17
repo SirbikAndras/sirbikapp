@@ -1,11 +1,12 @@
 .gitignore
 .npmignore
-.openapi-generator-ignore
 api.ts
-api/hello-controller-api.ts
+api/login-controller-api.ts
 base.ts
 common.ts
 configuration.ts
 git_push.sh
 index.ts
 models/index.ts
+models/login-request-dto.ts
+models/login-response-dto.ts

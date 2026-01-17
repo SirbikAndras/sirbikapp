@@ -1,19 +1,19 @@
 import {createBrowserRouter, NavLink, RouterProvider} from "react-router";
 import CounterView from "./view/CounterView.tsx";
-import HelloView from "./view/HelloView.tsx";
+import LoginView from "./view/LoginView.tsx";
 
 function Root() {
     return <div>
         <NavLink to="/counter">Counter</NavLink>
         {' | '}
-        <NavLink to="/hello">Hello API</NavLink>
+        <NavLink to="/login">Login</NavLink>
     </div>
 }
 
 const router = createBrowserRouter([
     {path: "/", Component: Root},
     {path: "/counter", Component: CounterView},
-    {path: "/hello", Component: HelloView},
+    {path: "/login", Component: LoginView},
 ]);
 
 function App() {
