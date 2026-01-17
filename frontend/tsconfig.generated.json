@@ -10,7 +10,10 @@
     "declaration": true,
     "declarationMap": true,
     "composite": true,
-    "strict": true
+    "strict": true,
+    "emitDeclarationOnly": true,
+    "rootDir": "./src/api/generated",
+    "outDir": "./dist/generated"
   },
   "include": ["src/api/generated"]
 }
