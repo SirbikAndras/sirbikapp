@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #1A1A1C;
+  --color-card: #242426;
+  --color-text-primary: #F5F5F0;
+  --color-text-secondary: #6E6E70;
+  --color-text-placeholder: #4A4A4C;
+  --color-border: #3A3A3C;
+  --color-accent: #C9A962;
+  --color-accent-dark: #8B7845;
+  --color-input-bg: #1A1A1C;
+}
+
+@layer base {
+  .font-heading {
+    font-family: "Cormorant Garamond", serif;
+  }
+  .font-body {
+    font-family: "Inter", sans-serif;
+  }
+}
