@@ -2,8 +2,7 @@ import { useState, useTransition } from "react";
 import { loginApi } from "../api/apiClient.ts";
 import type { LoginRequestDTO } from "../api/generated";
 import { JWT_TOKEN_KEY } from "../api/axiosInstance";
-import { NavLink } from "react-router";
-import { useNavigate } from "react-router";
+import { NavLink, useLocation, useNavigate } from "react-router";
 import Button from "../components/Button";
 import Input from "../components/Input";
 import LockIcon from "../icons/LockIcon.tsx";
@@ -19,6 +18,8 @@ export default function LoginView() {
   const [isPending, startTransition] = useTransition();
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = (location.state as { from?: { pathname: string } })?.from?.pathname || "/";
 
   const login = () => {
     if (!loginForm.email || !loginForm.password) {
@@ -30,7 +31,7 @@ export default function LoginView() {
       const token = response.data.token;
       if (token) {
         sessionStorage.setItem(JWT_TOKEN_KEY, token);
-        navigate("/");
+        navigate(from, { replace: true });
       }
     });
   };
