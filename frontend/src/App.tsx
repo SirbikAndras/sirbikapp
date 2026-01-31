@@ -1,12 +1,12 @@
 import {createBrowserRouter, NavLink, RouterProvider} from "react-router";
-import CounterView from "./view/CounterView.tsx";
 import LoginView from "./view/LoginView.tsx";
 import ProtectedRoute from "./components/ProtectedRoute.tsx";
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query'
+import WeightView from "./view/WeightView.tsx";
 
 function Root() {
     return <div>
-        <NavLink to="/counter">Counter</NavLink>
+        <NavLink to="/weight">Weight</NavLink>
         {' | '}
         <NavLink to="/login">Login</NavLink>
     </div>
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         Component: ProtectedRoute,
         children: [
             {path: "/", Component: Root},
-            {path: "/counter", Component: CounterView},
+            {path: "/weight", Component: WeightView},
         ],
     },
 ]);

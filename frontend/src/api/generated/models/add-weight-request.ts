@@ -17,20 +17,14 @@
 /**
  * 
  * @export
- * @interface LoginRequestDTO
+ * @interface AddWeightRequest
  */
-export interface LoginRequestDTO {
+export interface AddWeightRequest {
     /**
      * 
-     * @type {string}
-     * @memberof LoginRequestDTO
+     * @type {number}
+     * @memberof AddWeightRequest
      */
-    'email'?: string;
-    /**
-     * 
-     * @type {string}
-     * @memberof LoginRequestDTO
-     */
-    'password'?: string;
+    'weight'?: number;
 }
 

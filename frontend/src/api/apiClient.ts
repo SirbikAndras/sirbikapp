@@ -1,4 +1,4 @@
-import {Configuration, CounterControllerApi, LoginControllerApi} from './generated';
+import {Configuration, WeightControllerApi, LoginControllerApi} from './generated';
 import axiosInstance from './axiosInstance';
 
 const config = new Configuration({
@@ -6,4 +6,4 @@ const config = new Configuration({
 });
 
 export const loginApi = new LoginControllerApi(config, '', axiosInstance);
-export const counterApi = new CounterControllerApi(config, '', axiosInstance);
+export const weightApi = new WeightControllerApi(config, '', axiosInstance);
