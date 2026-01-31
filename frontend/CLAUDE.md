@@ -40,3 +40,9 @@ npm run generate-api     # Regenerate API clients from backend OpenAPI spec
 
 ### Node Version
 v24 (see `.nvmrc`)
+
+## Important Rules
+
+- **Never start the dev server** (`npm run dev`). The user will pre-start the project when needed.
+- **Playwright testing:** Assume the dev server is already running when asked to use Playwright. (Available on localhost:8080)
+- **Always run lint** (`npm run lint`) before finishing work.
