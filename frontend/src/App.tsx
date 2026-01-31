@@ -1,6 +1,7 @@
 import {createBrowserRouter, NavLink, RouterProvider} from "react-router";
 import CounterView from "./view/CounterView.tsx";
 import LoginView from "./view/LoginView.tsx";
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query'
 
 function Root() {
     return <div>
@@ -17,7 +18,12 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-    return <RouterProvider router={router}/>
+
+    const queryClient = new QueryClient();
+
+    return <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router}/>
+    </QueryClientProvider>;
 }
 
 export default App

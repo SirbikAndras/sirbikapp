@@ -14,5 +14,6 @@
 
 
 
+export * from './api/counter-controller-api';
 export * from './api/login-controller-api';
 

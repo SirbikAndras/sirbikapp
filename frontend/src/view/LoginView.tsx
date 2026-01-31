@@ -1,6 +1,8 @@
 import {useState, useTransition} from "react";
 import {loginApi} from "../api/apiClient.ts";
 import type {LoginRequestDTO} from "../api/generated";
+import {JWT_TOKEN_KEY} from "../api/axiosInstance";
+import {NavLink} from "react-router";
 
 export default function LoginView() {
 
@@ -15,7 +17,11 @@ export default function LoginView() {
 
         startTransition(async () => {
             const response = await loginApi.login(loginForm);
-            setJwtToken(response.data.token);
+            const token = response.data.token;
+            if (token) {
+                sessionStorage.setItem(JWT_TOKEN_KEY, token);
+            }
+            setJwtToken(token);
         });
     }
 
@@ -24,6 +30,7 @@ export default function LoginView() {
     }
 
     return <div>
+        <NavLink to="/">Home</NavLink>
         <input type="text" placeholder="Email" value={loginForm.email}
                onChange={(e) => setLoginForm({...loginForm, email: e.target.value})}/>
         <input type="password" placeholder="Password" value={loginForm.password}

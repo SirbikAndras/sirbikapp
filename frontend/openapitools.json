@@ -6,7 +6,7 @@
     "generators": {
       "api": {
         "generatorName": "typescript-axios",
-        "inputSpec": "http://localhost:8080/v3/api-docs",
+        "inputSpec": "http://localhost:8081/v3/api-docs",
         "output": "./src/api/generated",
         "additionalProperties": {
           "supportsES6": "true",

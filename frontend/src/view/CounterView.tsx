@@ -1,34 +1,37 @@
-import {useState} from "react";
-import viteLogo from "../assets/vite.svg";
-import reactLogo from "../assets/react.svg";
 import {NavLink} from "react-router";
+import {counterApi} from "../api/apiClient.ts";
+import {useMutation, useQuery, useQueryClient} from "@tanstack/react-query";
 
 export default function CounterView() {
-    const [count, setCount] = useState(0)
+    const queryClient = useQueryClient();
+
+    const { data: counter, isPending: queryPending, error: counterError } = useQuery({
+        queryKey: ['counter'],
+        queryFn: async () => counterApi.getCounter().then(r => r.data),
+        retry: false
+    })
+
+    const mutation = useMutation({
+        mutationFn: async () => counterApi.incrementCounter().then(r => r.data),
+        onSuccess: (newCounter) => {
+            queryClient.setQueryData(['counter'], newCounter);
+        }
+    })
+
+    if (counterError) {
+        return <div><NavLink to="/">Home</NavLink>Error: {counterError.message}</div>
+    }
+
+    const isLoading = queryPending || mutation.isPending;
 
     return (
         <>
             <NavLink to="/">Home</NavLink>
-            <div>
-                <a href="https://vite.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo"/>
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img src={reactLogo} className="logo react" alt="React logo"/>
-                </a>
-            </div>
-            <h1>Vite + React</h1>
             <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
+                {isLoading ? <div>Api call...</div> : <button onClick={() => mutation.mutate()}>
+                    count is {counter}
+                </button>}
             </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
         </>
     )
 }
