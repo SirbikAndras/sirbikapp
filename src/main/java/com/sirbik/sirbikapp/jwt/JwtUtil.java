@@ -33,7 +33,7 @@ public class JwtUtil {
         return JWT.create()
                 .withIssuer("sirbik")
                 .withSubject(subject.toString())
-                .withClaim("role", Role.ADMIN.name())
+                .withClaim("role", role.name())
                 .sign(algorithm);
     }
 

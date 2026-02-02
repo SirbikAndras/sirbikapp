@@ -4,3 +4,15 @@ server:
 spring:
   application:
     name: sirbikapp
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/home_server}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:12345678}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: ${JPA_DDL_AUTO:none}
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect

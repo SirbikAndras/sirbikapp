@@ -36,7 +36,8 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             String jwt = authorization.substring(7);
             try {
                 JwtUtil.DecodedTokenData tokenData = jwtUtil.checkToken(jwt);
-                SecurityContextHolder.getContext().setAuthentication(new JwtAuthenticationToken(jwt, tokenData.subject(), tokenData.role()));
+                JwtAuthenticationToken authentication = new JwtAuthenticationToken(jwt, tokenData.subject(), tokenData.role());
+                SecurityContextHolder.setContext(new UserSecurityContext(authentication, tokenData.subject()));
             } catch (Exception _) {
                 response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Invalid JWT token");
                 return;

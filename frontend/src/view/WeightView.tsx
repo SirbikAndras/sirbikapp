@@ -59,10 +59,21 @@ export default function WeightView() {
         return formatDate(dateString);
     };
 
-    const todayRecord = records[0];
-    const yesterdayRecord = records[1];
-    const todayChange = getChange(0);
-    const yesterdayChange = getChange(1);
+    const today = new Date();
+    const yesterday = new Date(today);
+    yesterday.setDate(yesterday.getDate() - 1);
+
+    const todayIndex = records.findIndex(
+        (r) => r.date && new Date(r.date).toDateString() === today.toDateString()
+    );
+    const yesterdayIndex = records.findIndex(
+        (r) => r.date && new Date(r.date).toDateString() === yesterday.toDateString()
+    );
+
+    const todayRecord = todayIndex >= 0 ? records[todayIndex] : undefined;
+    const yesterdayRecord = yesterdayIndex >= 0 ? records[yesterdayIndex] : undefined;
+    const todayChange = todayIndex >= 0 ? getChange(todayIndex) : null;
+    const yesterdayChange = yesterdayIndex >= 0 ? getChange(yesterdayIndex) : null;
 
     return (
         <div className="p-8 flex flex-col gap-8">
