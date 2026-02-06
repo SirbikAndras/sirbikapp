@@ -3,22 +3,9 @@ import FlagIcon from "../icons/FlagIcon";
 import FlameIcon from "../icons/FlameIcon";
 import PlusIcon from "../icons/PlusIcon";
 import SettingsIcon from "../icons/SettingsIcon";
-
-const stats = {
-    currentWeight: 75.2,
-    goalWeight: 70.0,
-    streak: 7,
-};
-
-const weeklyProgress = [
-    { day: "Mon", height: 100 },
-    { day: "Tue", height: 85 },
-    { day: "Wed", height: 95 },
-    { day: "Thu", height: 75 },
-    { day: "Fri", height: 70 },
-    { day: "Sat", height: 65 },
-    { day: "Today", height: 60, isToday: true },
-];
+import { useQuery } from "@tanstack/react-query";
+import { homeApi } from "../api/homeApi.ts";
+import { useNavigate } from "react-router";
 
 interface StatCardProps {
     icon: React.ComponentType;
@@ -80,14 +67,51 @@ function ProgressBar({ day, height, isToday }: ProgressBarProps) {
 }
 
 export default function HomeView() {
-    const toGoWeight = (stats.currentWeight - stats.goalWeight).toFixed(1);
+    const navigate = useNavigate();
+    const { data: stats, isPending: isStatsPending } = useQuery({
+        queryKey: ["homeStats"],
+        queryFn: homeApi.getStats,
+    });
+    const { data: weeklyProgress, isPending: isProgressPending } = useQuery({
+        queryKey: ["homeProgress", 7],
+        queryFn: () => homeApi.getProgress(7),
+    });
+
+    const isPending = isStatsPending || isProgressPending;
+    const progress = weeklyProgress || [];
+    const knownWeights = progress
+        .map((item) => item.weight)
+        .filter((weight): weight is number => typeof weight === "number");
+    const minWeight = knownWeights.length > 0 ? Math.min(...knownWeights) : 0;
+    const maxWeight = knownWeights.length > 0 ? Math.max(...knownWeights) : 1;
+    const range = Math.max(maxWeight - minWeight, 0.1);
+
+    const chartItems = progress.map((point, index) => {
+        const isToday = index === progress.length - 1;
+        const barWeight = point.weight;
+        const normalized = typeof barWeight === "number" ? (barWeight - minWeight) / range : 0;
+        return {
+            day: isToday
+                ? "Today"
+                : new Date(point.date).toLocaleDateString("en-US", { weekday: "short" }),
+            height: typeof barWeight === "number" ? 40 + normalized * 60 : 12,
+            isToday,
+        };
+    });
+
+    const currentWeight = stats?.currentWeight;
+    const goalWeight = stats?.goalWeight;
+    const toGoWeight =
+        typeof currentWeight === "number" && typeof goalWeight === "number"
+            ? (currentWeight - goalWeight).toFixed(1)
+            : null;
 
     return (
         <div className="p-8 flex flex-col gap-8 h-full">
             {/* Header */}
             <div className="flex flex-col gap-2">
                 <h1 className="font-heading text-3xl text-(--color-text-primary)">
-                    Welcome back, John
+                    Welcome back, {stats?.userName || "there"}
                 </h1>
                 <p className="font-body text-sm text-(--color-text-secondary)">
                     Here's your health journey at a glance
@@ -99,20 +123,20 @@ export default function HomeView() {
                 <StatCard
                     icon={TargetIcon}
                     label="Current Weight"
-                    value={`${stats.currentWeight} kg`}
-                    subtext="Updated today"
+                    value={typeof currentWeight === "number" ? `${currentWeight.toFixed(1)} kg` : "-"}
+                    subtext="Latest record"
                     accent
                 />
                 <StatCard
                     icon={FlagIcon}
                     label="Goal Weight"
-                    value={`${stats.goalWeight.toFixed(1)} kg`}
-                    subtext={`${toGoWeight} kg to go`}
+                    value={typeof goalWeight === "number" ? `${goalWeight.toFixed(1)} kg` : "-"}
+                    subtext={toGoWeight !== null ? `${toGoWeight} kg to go` : "Set your target"}
                 />
                 <StatCard
                     icon={FlameIcon}
                     label="Logging Streak"
-                    value={`${stats.streak} days`}
+                    value={`${stats?.streak ?? 0} days`}
                     subtext="Keep it up!"
                 />
             </div>
@@ -123,20 +147,27 @@ export default function HomeView() {
                     Your Progress
                 </h2>
                 <div className="flex items-end justify-between gap-4 px-4">
-                    {weeklyProgress.map((item) => (
-                        <ProgressBar
-                            key={item.day}
-                            day={item.day}
-                            height={item.height}
-                            isToday={item.isToday}
-                        />
-                    ))}
+                    {isPending ? (
+                        <span className="font-body text-sm text-(--color-text-secondary)">Loading...</span>
+                    ) : chartItems.length === 0 ? (
+                        <span className="font-body text-sm text-(--color-text-secondary)">No data yet</span>
+                    ) : (
+                        chartItems.map((item) => (
+                            <ProgressBar
+                                key={item.day}
+                                day={item.day}
+                                height={item.height}
+                                isToday={item.isToday}
+                            />
+                        ))
+                    )}
                 </div>
             </div>
 
             {/* Quick Actions */}
             <div className="flex gap-4">
                 <button
+                    onClick={() => navigate("/weight")}
                     className="flex items-center justify-center gap-2 h-13 px-6 rounded-xl font-body font-medium cursor-pointer transition-opacity hover:opacity-90"
                     style={{
                         background:
@@ -147,7 +178,10 @@ export default function HomeView() {
                     <PlusIcon />
                     <span>Log Today's Weight</span>
                 </button>
-                <button className="flex items-center justify-center gap-2 h-13 px-6 rounded-xl font-body font-medium border border-(--color-border) text-(--color-text-primary) bg-transparent cursor-pointer transition-colors hover:border-(--color-text-secondary)">
+                <button
+                    onClick={() => navigate("/weight")}
+                    className="flex items-center justify-center gap-2 h-13 px-6 rounded-xl font-body font-medium border border-(--color-border) text-(--color-text-primary) bg-transparent cursor-pointer transition-colors hover:border-(--color-text-secondary)"
+                >
                     <SettingsIcon />
                     <span>Update Goal</span>
                 </button>
