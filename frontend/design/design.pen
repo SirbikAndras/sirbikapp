@@ -1,5 +1,5 @@
 {
-  "version": "2.6",
+  "version": "2.7",
   "children": [
     {
       "type": "frame",
@@ -2360,6 +2360,3234 @@
                       "fontFamily": "Inter",
                       "fontSize": 16,
                       "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "WBYeg",
+      "x": 762,
+      "y": 636,
+      "name": "Torrent",
+      "clip": true,
+      "width": 1000,
+      "height": 864,
+      "fill": "#1A1A1C",
+      "children": [
+        {
+          "type": "frame",
+          "id": "MwKmD",
+          "name": "Sidebar",
+          "width": 240,
+          "height": "fill_container",
+          "fill": "#242426",
+          "layout": "vertical",
+          "padding": [
+            24,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "WtpsP",
+              "name": "SidebarTop",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kyAtS",
+                  "name": "UserInitials",
+                  "width": 48,
+                  "height": 48,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 135,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#C9A962",
+                        "position": 0
+                      },
+                      {
+                        "color": "#8B7845",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "6NPgy",
+                      "name": "InitialsText",
+                      "fill": "#1A1A1C",
+                      "content": "JD",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "iRgus",
+                  "name": "MenuSection",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "qbd6l",
+                      "name": "HomeMenuItem",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "transparent",
+                      "cornerRadius": 10,
+                      "gap": 12,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "b7Zn1",
+                          "name": "homeIcon",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "house",
+                          "iconFontFamily": "lucide",
+                          "fill": "#6E6E70"
+                        },
+                        {
+                          "type": "text",
+                          "id": "d89Qi",
+                          "name": "homeText",
+                          "fill": "#6E6E70",
+                          "content": "Home",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SJb20",
+                      "name": "WeightMenuItem",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "transparent",
+                      "cornerRadius": 10,
+                      "gap": 12,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Dqm5m",
+                          "name": "weightIcon",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "scale",
+                          "iconFontFamily": "lucide",
+                          "fill": "#6E6E70"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VhHvH",
+                          "name": "weightText",
+                          "fill": "#6E6E70",
+                          "content": "Weight",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZeVdL",
+                      "name": "TorrentMenuItem",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#3A3A3C",
+                      "cornerRadius": 10,
+                      "gap": 12,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "AJrcD",
+                          "name": "torrentIcon",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "download",
+                          "iconFontFamily": "lucide",
+                          "fill": "#C9A962"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JgtS3",
+                          "name": "torrentText",
+                          "fill": "#F5F5F0",
+                          "content": "Torrents",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "vFYci",
+              "name": "SidebarSpacer",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "none"
+            },
+            {
+              "type": "frame",
+              "id": "kjKjO",
+              "name": "LogoutButton",
+              "width": "fill_container",
+              "height": 44,
+              "fill": "transparent",
+              "cornerRadius": 10,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#3A3A3C"
+              },
+              "gap": 12,
+              "padding": [
+                0,
+                12
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "wHhqf",
+                  "name": "logoutIcon",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "log-out",
+                  "iconFontFamily": "lucide",
+                  "fill": "#6E6E70"
+                },
+                {
+                  "type": "text",
+                  "id": "8XBba",
+                  "name": "logoutText",
+                  "fill": "#6E6E70",
+                  "content": "Logout",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "S0mBb",
+          "name": "MainContent",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "ryesY",
+              "name": "Header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vLEUr",
+                  "name": "HeaderTitle",
+                  "fill": "#F5F5F0",
+                  "content": "Active Torrents",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 32,
+                  "fontWeight": "300"
+                },
+                {
+                  "type": "text",
+                  "id": "IHTwY",
+                  "name": "HeaderSubtitle",
+                  "fill": "#6E6E70",
+                  "content": "Manage and monitor your torrent downloads",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xNgde",
+              "name": "ActionRow",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FS0wZ",
+                  "name": "AddTorrentButton",
+                  "height": 44,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 90,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#C9A962",
+                        "position": 0
+                      },
+                      {
+                        "color": "#8B7845",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 12,
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    20
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "b4nt6",
+                      "name": "addIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "plus",
+                      "iconFontFamily": "lucide",
+                      "fill": "#1A1A1C"
+                    },
+                    {
+                      "type": "text",
+                      "id": "AxoAs",
+                      "name": "addText",
+                      "fill": "#1A1A1C",
+                      "content": "Add torrent",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4d6a1",
+                  "name": "FilterDropdown",
+                  "height": 44,
+                  "fill": "transparent",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3A3A3C"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dHZLP",
+                      "name": "filterText",
+                      "fill": "#F5F5F0",
+                      "content": "All",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "VVFJj",
+                      "name": "filterIcon",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#6E6E70"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "EU5Qb",
+              "name": "TorrentGrid",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hbHOU",
+                  "name": "Row1",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "5WzUA",
+                      "name": "TorrentCard1",
+                      "width": "fill_container",
+                      "fill": "#242426",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A3A3C"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zta8q",
+                          "name": "card1Name",
+                          "fill": "#F5F5F0",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Caught.Stealing.2025.1080p.MA.WEBRip.DDP5.1...",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "D95lX",
+                          "name": "ProgressBarBg",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#3A3A3C",
+                          "cornerRadius": 3,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "TxQqg",
+                              "name": "ProgressBarFill",
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 0,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#C9A962",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#8B7845",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": 3
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "5gjuz",
+                          "name": "card1Status",
+                          "fill": "#C9A962",
+                          "content": "100% Complete",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "8eFp6",
+                          "name": "InfoGrid",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "HfWnQ",
+                              "name": "card1CatRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "klsVz",
+                                  "name": "card1CatLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "Category",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "BY8Ik",
+                                  "name": "card1CatVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "ANIME",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "EezKM",
+                              "name": "upRow1",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "lgDBX",
+                                  "name": "upLbl1",
+                                  "fill": "#6E6E70",
+                                  "content": "Uploaded",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "x3hDM",
+                                  "name": "upVal1",
+                                  "fill": "#F5F5F0",
+                                  "content": "1.5 GiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "TlZhv",
+                              "name": "isRow1",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "PX1uD",
+                                  "name": "isLbl1",
+                                  "fill": "#6E6E70",
+                                  "content": "In Session",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "cMS5K",
+                                  "name": "isVal1",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "1Hdwl",
+                              "name": "card1DlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "V1lkj",
+                                  "name": "card1DlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "DL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "folqk",
+                                  "name": "card1DlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "gsAY2",
+                              "name": "card1UlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "io2VO",
+                                  "name": "card1UlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "UL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "XmIyy",
+                                  "name": "card1UlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MdbBP",
+                      "name": "card2",
+                      "width": "fill_container",
+                      "fill": "#242426",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A3A3C"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CCZrB",
+                          "name": "card1Name",
+                          "fill": "#F5F5F0",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The.Order.2024.1080p.BluRay.x264-KNIVES",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "dnNVC",
+                          "name": "ProgressBarBg",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#3A3A3C",
+                          "cornerRadius": 3,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "oggxI",
+                              "name": "ProgressBarFill",
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 0,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#C9A962",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#8B7845",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": 3
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "cPdjQ",
+                          "name": "card1Status",
+                          "fill": "#C9A962",
+                          "content": "100% Complete",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "cEFr9",
+                          "name": "InfoGrid",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "zrtPC",
+                              "name": "card1CatRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "mbMCK",
+                                  "name": "card1CatLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "Category",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "eKuJd",
+                                  "name": "card1CatVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "ANIME",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "irJih",
+                              "name": "upRow2",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "zbY99",
+                                  "name": "upLbl2",
+                                  "fill": "#6E6E70",
+                                  "content": "Uploaded",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "t2t06",
+                                  "name": "upVal2",
+                                  "fill": "#F5F5F0",
+                                  "content": "3.2 GiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "9DDPL",
+                              "name": "isRow2",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "gyqTP",
+                                  "name": "isLbl2",
+                                  "fill": "#6E6E70",
+                                  "content": "In Session",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "VCdOS",
+                                  "name": "isVal2",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "OmYQp",
+                              "name": "card1DlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "iFsYw",
+                                  "name": "card1DlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "DL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "mhWR2",
+                                  "name": "card1DlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "nn6B5",
+                              "name": "card1UlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "ZcqdO",
+                                  "name": "card1UlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "UL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "MSL4u",
+                                  "name": "card1UlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Wbdzb",
+                      "name": "card3",
+                      "width": "fill_container",
+                      "fill": "#242426",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A3A3C"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "JCkhi",
+                          "name": "card1Name",
+                          "fill": "#F5F5F0",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The.Ministry.of.Ungentlemanly.Warfare.2024.1080...",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "8GZOb",
+                          "name": "ProgressBarBg",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#3A3A3C",
+                          "cornerRadius": 3,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "2Ri8n",
+                              "name": "ProgressBarFill",
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 0,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#C9A962",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#8B7845",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": 3
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "45fzU",
+                          "name": "card1Status",
+                          "fill": "#C9A962",
+                          "content": "100% Complete",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "z5z1o",
+                          "name": "InfoGrid",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "8YMnY",
+                              "name": "card1CatRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "dDmQu",
+                                  "name": "card1CatLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "Category",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Xlody",
+                                  "name": "card1CatVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "ANIME",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "9CDaO",
+                              "name": "upRow3",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "voGb3",
+                                  "name": "upLbl3",
+                                  "fill": "#6E6E70",
+                                  "content": "Uploaded",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "6sUDe",
+                                  "name": "upVal3",
+                                  "fill": "#F5F5F0",
+                                  "content": "2.8 GiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "FYnqK",
+                              "name": "isRow3",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "PTuwK",
+                                  "name": "isLbl3",
+                                  "fill": "#6E6E70",
+                                  "content": "In Session",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "J1QyV",
+                                  "name": "isVal3",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "HxQCp",
+                              "name": "card1DlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Syr7e",
+                                  "name": "card1DlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "DL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "0dRNc",
+                                  "name": "card1DlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "kLN9q",
+                              "name": "card1UlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "TAtG6",
+                                  "name": "card1UlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "UL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "GUAC1",
+                                  "name": "card1UlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SEQYB",
+                  "name": "Row2",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "9HHf6",
+                      "name": "card4",
+                      "width": "fill_container",
+                      "fill": "#242426",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A3A3C"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Z5mlH",
+                          "name": "card1Name",
+                          "fill": "#F5F5F0",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Nobody.2.2025.1080p.MA.WEBRip.DDP7.1.Atmos...",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "0bDDt",
+                          "name": "ProgressBarBg",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#3A3A3C",
+                          "cornerRadius": 3,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "XMMEX",
+                              "name": "ProgressBarFill",
+                              "width": 95,
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 0,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#C9A962",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#8B7845",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": 3
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "VLCdn",
+                          "name": "card1Status",
+                          "fill": "#F5F5F0",
+                          "content": "47% Downloading",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "1qyHg",
+                          "name": "InfoGrid",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "xWw0J",
+                              "name": "card1CatRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Tpicm",
+                                  "name": "card1CatLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "Category",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "JWBug",
+                                  "name": "card1CatVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "ANIME",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "HIw0o",
+                              "name": "upRow4",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "xPNTF",
+                                  "name": "upLbl4",
+                                  "fill": "#6E6E70",
+                                  "content": "Uploaded",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "JIUA5",
+                                  "name": "upVal4",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "QuE2i",
+                              "name": "isRow4",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "nwh6c",
+                                  "name": "isLbl4",
+                                  "fill": "#6E6E70",
+                                  "content": "In Session",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "cqr0a",
+                                  "name": "isVal4",
+                                  "fill": "#F5F5F0",
+                                  "content": "128.5 MiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "mJpaV",
+                              "name": "card1DlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "fFPnQ",
+                                  "name": "card1DlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "DL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "i208x",
+                                  "name": "card1DlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "2.4 MiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "gGZQF",
+                              "name": "card1UlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "vOmXU",
+                                  "name": "card1UlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "UL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Fo3AO",
+                                  "name": "card1UlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "512.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jzP6T",
+                      "name": "card5",
+                      "width": "fill_container",
+                      "fill": "#242426",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A3A3C"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "1M531",
+                          "name": "card1Name",
+                          "fill": "#F5F5F0",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The.Family.Plan.2.2025.1080p.WEB.h264-GRACE",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "sdQy2",
+                          "name": "ProgressBarBg",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#3A3A3C",
+                          "cornerRadius": 3,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "oWO3L",
+                              "name": "ProgressBarFill",
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 0,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#C9A962",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#8B7845",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": 3
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "0m7vh",
+                          "name": "card1Status",
+                          "fill": "#C9A962",
+                          "content": "100% Complete",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "CHX6k",
+                          "name": "InfoGrid",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "SM4FW",
+                              "name": "card1CatRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "2YRYS",
+                                  "name": "card1CatLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "Category",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "9sCIX",
+                                  "name": "card1CatVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "ANIME",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "JRML4",
+                              "name": "upRow5",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "nKzvR",
+                                  "name": "upLbl5",
+                                  "fill": "#6E6E70",
+                                  "content": "Uploaded",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "TgY1s",
+                                  "name": "upVal5",
+                                  "fill": "#F5F5F0",
+                                  "content": "4.1 GiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "hRfIB",
+                              "name": "isRow5",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "V8IDG",
+                                  "name": "isLbl5",
+                                  "fill": "#6E6E70",
+                                  "content": "In Session",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "geqED",
+                                  "name": "isVal5",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Ie6uA",
+                              "name": "card1DlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Izbxs",
+                                  "name": "card1DlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "DL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "qUf3Y",
+                                  "name": "card1DlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "2UVJH",
+                              "name": "card1UlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Bd3nk",
+                                  "name": "card1UlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "UL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "FNjpS",
+                                  "name": "card1UlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RSPsw",
+                      "name": "card6",
+                      "width": "fill_container",
+                      "fill": "#242426",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A3A3C"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ibuGw",
+                          "name": "card1Name",
+                          "fill": "#F5F5F0",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Play.Dirty.2025.1080p.AMZN.WEB-DL.DDP5.1.H.2...",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Ubgxk",
+                          "name": "ProgressBarBg",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#3A3A3C",
+                          "cornerRadius": 3,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "32J9c",
+                              "name": "ProgressBarFill",
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 0,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#C9A962",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#8B7845",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": 3
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "8f4dX",
+                          "name": "card1Status",
+                          "fill": "#C9A962",
+                          "content": "100% Complete",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "jBe9L",
+                          "name": "InfoGrid",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "kgLsz",
+                              "name": "card1CatRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "aCsKe",
+                                  "name": "card1CatLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "Category",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "b0uI8",
+                                  "name": "card1CatVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "ANIME",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "FIkdB",
+                              "name": "upRow6",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "5l8zm",
+                                  "name": "upLbl6",
+                                  "fill": "#6E6E70",
+                                  "content": "Uploaded",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "hi7AF",
+                                  "name": "upVal6",
+                                  "fill": "#F5F5F0",
+                                  "content": "2.0 GiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "tYQZo",
+                              "name": "isRow6",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "m1tAZ",
+                                  "name": "isLbl6",
+                                  "fill": "#6E6E70",
+                                  "content": "In Session",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "BsWgV",
+                                  "name": "isVal6",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "VnB8k",
+                              "name": "card1DlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "zOKWE",
+                                  "name": "card1DlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "DL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "eF8M3",
+                                  "name": "card1DlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "DBUFA",
+                              "name": "card1UlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "O6Fty",
+                                  "name": "card1UlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "UL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "mERoe",
+                                  "name": "card1UlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PCqhW",
+                  "name": "Row3",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "HJO7S",
+                      "name": "card7",
+                      "width": "fill_container",
+                      "fill": "#242426",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A3A3C"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LTnlP",
+                          "name": "card1Name",
+                          "fill": "#F5F5F0",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "One.Battle.After.Another.2025.1080p.MA.WEBRip...",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "eBxFf",
+                          "name": "ProgressBarBg",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#3A3A3C",
+                          "cornerRadius": 3,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "cUHVo",
+                              "name": "ProgressBarFill",
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 0,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#C9A962",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#8B7845",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": 3
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "9O3Ue",
+                          "name": "card1Status",
+                          "fill": "#C9A962",
+                          "content": "100% Complete",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "04Prr",
+                          "name": "InfoGrid",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Z48If",
+                              "name": "card1CatRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "aCqI1",
+                                  "name": "card1CatLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "Category",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "6nNgo",
+                                  "name": "card1CatVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "ANIME",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "wTKdT",
+                              "name": "upRow7",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "akpCM",
+                                  "name": "upLbl7",
+                                  "fill": "#6E6E70",
+                                  "content": "Uploaded",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "PIhcO",
+                                  "name": "upVal7",
+                                  "fill": "#F5F5F0",
+                                  "content": "1.1 GiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "FZXzp",
+                              "name": "isRow7",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "NouwR",
+                                  "name": "isLbl7",
+                                  "fill": "#6E6E70",
+                                  "content": "In Session",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "oRzAs",
+                                  "name": "isVal7",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "R6yWX",
+                              "name": "card1DlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "F9vNg",
+                                  "name": "card1DlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "DL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "YRwdc",
+                                  "name": "card1DlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "eY2UP",
+                              "name": "card1UlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "EoyX8",
+                                  "name": "card1UlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "UL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "4B66y",
+                                  "name": "card1UlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CpEjr",
+                      "name": "card8",
+                      "width": "fill_container",
+                      "fill": "#242426",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A3A3C"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "voMcM",
+                          "name": "card1Name",
+                          "fill": "#F5F5F0",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Wake.Up.Dead.Man.A.Knives.Out.Mystery.2025.1...",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "DFtNK",
+                          "name": "ProgressBarBg",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#3A3A3C",
+                          "cornerRadius": 3,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Bt0F4",
+                              "name": "ProgressBarFill",
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 0,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#C9A962",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#8B7845",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": 3
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "APsth",
+                          "name": "card1Status",
+                          "fill": "#C9A962",
+                          "content": "100% Complete",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "mwEJE",
+                          "name": "InfoGrid",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "UUC8H",
+                              "name": "card1CatRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Ndo5L",
+                                  "name": "card1CatLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "Category",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "BfJwA",
+                                  "name": "card1CatVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "ANIME",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "bCASv",
+                              "name": "upRow8",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "e49aP",
+                                  "name": "upLbl8",
+                                  "fill": "#6E6E70",
+                                  "content": "Uploaded",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "TndPb",
+                                  "name": "upVal8",
+                                  "fill": "#F5F5F0",
+                                  "content": "5.7 GiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "aZhWq",
+                              "name": "isRow8",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "X5eVP",
+                                  "name": "isLbl8",
+                                  "fill": "#6E6E70",
+                                  "content": "In Session",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "us7av",
+                                  "name": "isVal8",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "b3Wca",
+                              "name": "card1DlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "xPODo",
+                                  "name": "card1DlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "DL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "zYgld",
+                                  "name": "card1DlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Or62s",
+                              "name": "card1UlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Vm9Di",
+                                  "name": "card1UlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "UL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "B8sv9",
+                                  "name": "card1UlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wZ18H",
+                      "name": "card9",
+                      "width": "fill_container",
+                      "fill": "#242426",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A3A3C"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PKmi3",
+                          "name": "card1Name",
+                          "fill": "#F5F5F0",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The.Running.Man.2025.1080p.AMZN.WEB-DL.DD...",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "GSEp4",
+                          "name": "ProgressBarBg",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#3A3A3C",
+                          "cornerRadius": 3,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "m7zst",
+                              "name": "ProgressBarFill",
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 0,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#C9A962",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#8B7845",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": 3
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "beyu0",
+                          "name": "card1Status",
+                          "fill": "#C9A962",
+                          "content": "100% Complete",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "0oQFP",
+                          "name": "InfoGrid",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "AbRpm",
+                              "name": "card1CatRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "V1Nnl",
+                                  "name": "card1CatLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "Category",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "oz8OR",
+                                  "name": "card1CatVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "ANIME",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "A9zJr",
+                              "name": "upRow9",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "WhL3e",
+                                  "name": "upLbl9",
+                                  "fill": "#6E6E70",
+                                  "content": "Uploaded",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "kH0QY",
+                                  "name": "upVal9",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.8 GiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Plf6k",
+                              "name": "isRow9",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "muFb2",
+                                  "name": "isLbl9",
+                                  "fill": "#6E6E70",
+                                  "content": "In Session",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "sodKP",
+                                  "name": "isVal9",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "sAgUI",
+                              "name": "card1DlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "U0sDp",
+                                  "name": "card1DlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "DL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "ibaFJ",
+                                  "name": "card1DlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "ucSVH",
+                              "name": "card1UlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "NcIwX",
+                                  "name": "card1UlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "UL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "KaMqK",
+                                  "name": "card1UlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fOrGV",
+                  "name": "Row4",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Lpk1E",
+                      "name": "card10",
+                      "width": "fill_container",
+                      "fill": "#242426",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A3A3C"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "6eo1A",
+                          "name": "card1Name",
+                          "fill": "#F5F5F0",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The.Tank.2025.1080p.AMZN.WEB-DL.DDP5.1.H.26...",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "asLZU",
+                          "name": "ProgressBarBg",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#3A3A3C",
+                          "cornerRadius": 3,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "KJyQU",
+                              "name": "ProgressBarFill",
+                              "width": 140,
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 0,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#C9A962",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#8B7845",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": 3
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "hw0ZU",
+                          "name": "card1Status",
+                          "fill": "#F5F5F0",
+                          "content": "72% Downloading",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ReFgF",
+                          "name": "InfoGrid",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "dSaEq",
+                              "name": "card1CatRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "uNIMf",
+                                  "name": "card1CatLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "Category",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "3AJsB",
+                                  "name": "card1CatVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "ANIME",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "FfjwQ",
+                              "name": "upRow10",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "3I939",
+                                  "name": "upLbl10",
+                                  "fill": "#6E6E70",
+                                  "content": "Uploaded",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "DcUAN",
+                                  "name": "upVal10",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "kuBlr",
+                              "name": "isRow10",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "ZWy69",
+                                  "name": "isLbl10",
+                                  "fill": "#6E6E70",
+                                  "content": "In Session",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "V24cO",
+                                  "name": "isVal10",
+                                  "fill": "#F5F5F0",
+                                  "content": "256.2 MiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "w8GUL",
+                              "name": "card1DlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "nRTva",
+                                  "name": "card1DlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "DL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "7VRbR",
+                                  "name": "card1DlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "5.1 MiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "5XftP",
+                              "name": "card1UlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Va9Ca",
+                                  "name": "card1UlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "UL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "RfAvs",
+                                  "name": "card1UlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "1.2 MiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "7zoUA",
+                      "name": "card11",
+                      "width": "fill_container",
+                      "fill": "#242426",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A3A3C"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "e1x7y",
+                          "name": "card1Name",
+                          "fill": "#F5F5F0",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Sinister.2012.1080p.BluRay.X264-AMIABLE",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "5GDQ4",
+                          "name": "ProgressBarBg",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#3A3A3C",
+                          "cornerRadius": 3,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Rqo9k",
+                              "name": "ProgressBarFill",
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 0,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#C9A962",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#8B7845",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": 3
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "MSr5G",
+                          "name": "card1Status",
+                          "fill": "#C9A962",
+                          "content": "100% Complete",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "t1HNf",
+                          "name": "InfoGrid",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "eWA6b",
+                              "name": "card1CatRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "QZr00",
+                                  "name": "card1CatLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "Category",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "DtLAo",
+                                  "name": "card1CatVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "ANIME",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Oyako",
+                              "name": "upRow11",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "MbGzT",
+                                  "name": "upLbl11",
+                                  "fill": "#6E6E70",
+                                  "content": "Uploaded",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "6ewUl",
+                                  "name": "upVal11",
+                                  "fill": "#F5F5F0",
+                                  "content": "2.3 GiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "OixnL",
+                              "name": "isRow11",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "B7jzs",
+                                  "name": "isLbl11",
+                                  "fill": "#6E6E70",
+                                  "content": "In Session",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "DAfsM",
+                                  "name": "isVal11",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "k7gW1",
+                              "name": "card1DlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "AVfrJ",
+                                  "name": "card1DlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "DL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "6JYSV",
+                                  "name": "card1DlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "3lEQo",
+                              "name": "card1UlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "7QQXI",
+                                  "name": "card1UlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "UL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "vHuuJ",
+                                  "name": "card1UlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Wrr4j",
+                      "name": "card12",
+                      "width": "fill_container",
+                      "fill": "#242426",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A3A3C"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "aeo0t",
+                          "name": "card1Name",
+                          "fill": "#F5F5F0",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The.Rip.2026.1080p.NF.WEB-DL.DDP5.1.Atmos.H...",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "zNwZJ",
+                          "name": "ProgressBarBg",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#3A3A3C",
+                          "cornerRadius": 3,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "vb6rF",
+                              "name": "ProgressBarFill",
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 0,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#C9A962",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#8B7845",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": 3
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "yueaT",
+                          "name": "card1Status",
+                          "fill": "#C9A962",
+                          "content": "100% Complete",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "cr9NM",
+                          "name": "InfoGrid",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "NZ6pY",
+                              "name": "card1CatRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "9FWQb",
+                                  "name": "card1CatLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "Category",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "48aje",
+                                  "name": "card1CatVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "ANIME",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "CdRC1",
+                              "name": "upRow12",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "zgS1U",
+                                  "name": "upLbl12",
+                                  "fill": "#6E6E70",
+                                  "content": "Uploaded",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "UJYLF",
+                                  "name": "upVal12",
+                                  "fill": "#F5F5F0",
+                                  "content": "3.9 GiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "GJOO0",
+                              "name": "isRow12",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "lnrNB",
+                                  "name": "isLbl12",
+                                  "fill": "#6E6E70",
+                                  "content": "In Session",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "iqd86",
+                                  "name": "isVal12",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "ZfHyD",
+                              "name": "card1DlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "utXBn",
+                                  "name": "card1DlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "DL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "qoSAn",
+                                  "name": "card1DlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "AMuJB",
+                              "name": "card1UlRow",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "fi1UU",
+                                  "name": "card1UlLabel",
+                                  "fill": "#6E6E70",
+                                  "content": "UL",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "DFWPQ",
+                                  "name": "card1UlVal",
+                                  "fill": "#F5F5F0",
+                                  "content": "0.0 KiB/s",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
