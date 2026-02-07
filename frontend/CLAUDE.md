@@ -28,7 +28,7 @@ npm run generate-api     # Regenerate API clients from backend OpenAPI spec
 
 ### Key Patterns
 
-**Authentication:** JWT tokens stored in `sessionStorage` (key: `jwtToken`). Axios interceptor in `axiosInstance.ts` automatically adds Bearer token to requests.
+**Authentication:** JWT tokens stored in `localStorage` (key: `jwtToken`). Axios interceptor in `axiosInstance.ts` automatically adds Bearer token to requests.
 
 **API Integration:** OpenAPI-generated clients provide full type safety. Regenerate with `npm run generate-api` when backend API changes.
 

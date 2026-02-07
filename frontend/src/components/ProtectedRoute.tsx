@@ -3,7 +3,7 @@ import { JWT_TOKEN_KEY } from "../api/axiosInstance";
 
 export default function ProtectedRoute() {
   const location = useLocation();
-  const token = sessionStorage.getItem(JWT_TOKEN_KEY);
+  const token = localStorage.getItem(JWT_TOKEN_KEY);
 
   if (!token) {
     return <Navigate to="/login" state={{ from: location }} replace />;

@@ -17,6 +17,11 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         return ResponseEntity.badRequest().body(new ErrorMessageDTO("Incorrect credentials"));
     }
 
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<ErrorMessageDTO> handleIllegalArgumentException(IllegalArgumentException exception) {
+        return ResponseEntity.badRequest().body(new ErrorMessageDTO(exception.getMessage()));
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorMessageDTO> handleUnknownExceptions(Exception exception) {
         log.error(exception.getMessage(), exception);

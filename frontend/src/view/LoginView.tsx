@@ -30,7 +30,7 @@ export default function LoginView() {
       const response = await loginApi.login(loginForm);
       const token = response.data.token;
       if (token) {
-        sessionStorage.setItem(JWT_TOKEN_KEY, token);
+        localStorage.setItem(JWT_TOKEN_KEY, token);
         navigate(from, { replace: true });
       }
     });

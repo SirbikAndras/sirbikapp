@@ -5,6 +5,7 @@ import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 import WeightView from "./view/WeightView.tsx";
 import MainLayout from "./layouts/MainLayout.tsx";
 import HomeView from "./view/HomeView.tsx";
+import TorrentView from "./view/TorrentView.tsx";
 
 const router = createBrowserRouter([
     // Public route
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
                 children: [
                     { path: "/", Component: HomeView },
                     { path: "/weight", Component: WeightView },
+                    { path: "/torrent", Component: TorrentView },
                 ],
             },
         ],

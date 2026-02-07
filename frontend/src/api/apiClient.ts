@@ -1,4 +1,4 @@
-import {Configuration, WeightControllerApi, LoginControllerApi} from './generated';
+import {Configuration, WeightControllerApi, LoginControllerApi, TorrentControllerApi} from './generated';
 import axiosInstance from './axiosInstance';
 
 const config = new Configuration({
@@ -7,3 +7,4 @@ const config = new Configuration({
 
 export const loginApi = new LoginControllerApi(config, '', axiosInstance);
 export const weightApi = new WeightControllerApi(config, '', axiosInstance);
+export const torrentApi = new TorrentControllerApi(config, '', axiosInstance);

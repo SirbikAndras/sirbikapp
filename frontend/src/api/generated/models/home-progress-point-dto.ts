@@ -14,8 +14,23 @@
 
 
 
-export * from './api/home-controller-api';
-export * from './api/login-controller-api';
-export * from './api/torrent-controller-api';
-export * from './api/weight-controller-api';
+/**
+ * 
+ * @export
+ * @interface HomeProgressPointDTO
+ */
+export interface HomeProgressPointDTO {
+    /**
+     * 
+     * @type {string}
+     * @memberof HomeProgressPointDTO
+     */
+    'date'?: string;
+    /**
+     * 
+     * @type {number}
+     * @memberof HomeProgressPointDTO
+     */
+    'weight'?: number;
+}
 

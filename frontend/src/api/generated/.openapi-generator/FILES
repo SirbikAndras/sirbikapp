@@ -1,7 +1,9 @@
 .gitignore
 .npmignore
 api.ts
+api/home-controller-api.ts
 api/login-controller-api.ts
+api/torrent-controller-api.ts
 api/weight-controller-api.ts
 base.ts
 common.ts
@@ -9,8 +11,12 @@ configuration.ts
 git_push.sh
 index.ts
 models/add-weight-request.ts
+models/home-progress-point-dto.ts
+models/home-stats-dto.ts
 models/index.ts
 models/login-request-dto.ts
 models/login-response-dto.ts
 models/page-dtoweight-record-dto.ts
+models/torrent-category-dto.ts
+models/torrent-summary-dto.ts
 models/weight-record-dto.ts

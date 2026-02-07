@@ -14,8 +14,23 @@
 
 
 
-export * from './api/home-controller-api';
-export * from './api/login-controller-api';
-export * from './api/torrent-controller-api';
-export * from './api/weight-controller-api';
+/**
+ * 
+ * @export
+ * @interface TorrentCategoryDTO
+ */
+export interface TorrentCategoryDTO {
+    /**
+     * 
+     * @type {string}
+     * @memberof TorrentCategoryDTO
+     */
+    'name'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof TorrentCategoryDTO
+     */
+    'savePath'?: string;
+}
 
